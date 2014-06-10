@@ -1,0 +1,92 @@
+html {
+	font-family:   		'Lato', 'sans-serif';
+	height: 			100%;
+	}
+body {
+	height: 			100%;
+	width: 				100%;
+	overflow: 			auto;
+	margin: 			0px;
+	padding: 			0px;
+	color:				black;
+	}
+#routeAutocomplete{
+	padding-left:		2px;
+	}
+#path{
+	padding-left:		2px;
+	}
+#my_textual_div {
+	margin: 			0;
+	padding: 			1em;
+	right:				0;
+	width:				auto;
+	}
+#my_textual_div ul {
+	list-style-type:	none;
+	}
+#my_textual_div li span {
+	position: 			absolute;
+	margin-left: 		-1.3em;
+	}
+#map_canvas{
+	position:			relative;
+	height:				30%;
+	width:				30%;
+	z-index:			-1;
+	display:			none;
+	}
+.ui-progressbar {
+	position: 			relative;
+	}
+.progress-label {
+	position: 			absolute;
+	top: 				4px;
+	left:				1px;
+	right:				1px;
+	text-align:			center;
+	color:				white;
+	text-shadow:		black 0.1em 0.1em 0.2em;
+
+	}
+.clidirdrop{
+	color:				black;
+	font-family:		'Arimo', 'sans-serif';
+	}
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.5);
+	}
+.overlayon{
+	display:	table;
+	}
+.overlayoff{
+	display:	none;
+	}
+#verthlpr{
+	display: table-cell;
+	vertical-align: middle;
+	}
+
+#routeListDir li ul{
+	display:table;
+	}
+#routeListDir li ul li{
+	display:table-cell;
+	vertical-align: top;
+	}
+.dirleg{
+	font-size: .8em;
+	}
+.dirlegdist{
+	font-size: .8em;
+	font-weight: bold;
+	}
+.routedir{
+	padding-left: 3em;
+	}
