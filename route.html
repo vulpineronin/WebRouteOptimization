@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Chaparral Labs. Route Optimization</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+
+        <link href='//fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato|Tangerine|Cinzel' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="css/routeopti.css">
+
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="js/jquery-1.11-beta.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/globalize.js"></script>
+        <script type="text/javascript" src="js/BpTspSolver.js"></script>
+        <script type="text/javascript" src="js/tsp.js"></script>
+        <script type="text/javascript" src="js/routeopti.js"></script>
+        <!--<script type="text/javascript" src="js/opti-mini.js"></script>-->
+
+    </head>
+    <body>
+
+        <div id="map_canvas"></div>
+        <div id="routeForm" style="float:right; height:100%; overflow:auto;"></div>
+        <table>
+        	<tr>
+        		<td align='right'>
+        			<div class="ui-corner-all" id="routeAutocomplete">
+            			<label for="plants">Select Plants for Route: </label>
+            	</td>
+            	<td align='left'>
+            			<input id="plants" class="ui-widget ui-corner-all">
+            	<td align='center'>
+            			<input type='button' id="calcHold" class='ui-button'  onclick="tspholder();" value='Calculations Running'>
+            			<input type='button' id="routeCalc" class='ui-button' onclick="tspholder();" value='Calculations Holding'>
+            	</td>
+        			</div>
+        		</td>
+        	</tr>
+        	<tr>
+        		<td align='right'>
+		        	<label for="timeSpinner">Start Time for Route: </label>
+        		</td>
+        		<td align='left'>
+        			<input id="timeSpinner" name="timeSpinner" value="05:00 AM">
+        		</td>
+        		<td align='center'>
+		        	<div id="exportGoogle" style="display:inline-block;"></div>
+		        </td>
+		        <td align='center'>
+        			<div id="reverseRoute" style="display:inline-block;"></div>
+        		</td>
+	       	</tr>
+        </table>
+        <div id="path"></div>
+        <div id="my_textual_div"></div>
+        <div id="exportDataButton"></div>
+        <div id="durations"></div>
+        <div id="overlay" class="overlayoff">
+        	<div id="verthlpr">
+        		<div id="progressBar">
+        			<div class="progress-label">Please wait for route to be calculated...</div>
+        		</div>
+        	</div>
+        </div>
+
+    </body>
+</html>
